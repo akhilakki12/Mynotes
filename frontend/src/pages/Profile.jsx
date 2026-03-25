@@ -20,7 +20,7 @@ export default function Profile() {
 // console.log("ID:", id);
   async function fetchData() {
     try {
-      let res = await axios.get(`${API_BASE_URL}/profile/${id}}`, {
+      let res = await axios.get(`${API_BASE_URL}/profile/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "authorization": `Bearer ${token}`
